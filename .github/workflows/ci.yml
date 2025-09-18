@@ -5,6 +5,10 @@ on:
     branches: ["main"]
   pull_request:
 
+defaults:
+  run:
+    working-directory: professional-demos
+
 env:
   PLAYWRIGHT_BROWSERS_PATH: ~/.cache/ms-playwright
 
@@ -52,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: playwright-report
+          path: professional-demos/playwright-report
           retention-days: 7
 
       - name: Upload test results (traces, axe reports)
@@ -60,7 +64,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: test-results
+          path: professional-demos/test-results
           retention-days: 7
 
       - name: Upload ranking metrics summary
@@ -68,5 +72,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ranking-metrics
-          path: demos/search/ranking-metrics-notebook/outputs/metrics_summary.csv
+          path: professional-demos/demos/search/ranking-metrics-notebook/outputs/metrics_summary.csv
           retention-days: 7
