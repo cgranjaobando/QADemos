@@ -1,6 +1,6 @@
 # CRO Experimentation — Swag Labs Hero Variants
 
-This demo imagines a conversion-focused iteration on the Swag Labs hero area so you can practice planning and communicating an A/B test without touching a live third-party property.
+This demo imagines a conversion-focused iteration on the Swag Labs hero area so we can practice planning and communicating an A/B test without touching a live third-party property.
 
 ## Assets
 
