@@ -32,5 +32,6 @@ export default defineConfig({
   metadata: {
     application: "saucedemo",
     demo: "swaglabs-playwright"
-  }
+  },
+  snapshotPathTemplate: "{testDir}/{testFileName}-snapshots/{arg}{ext}"
 });
