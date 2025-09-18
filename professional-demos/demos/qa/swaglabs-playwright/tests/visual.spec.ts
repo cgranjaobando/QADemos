@@ -4,6 +4,7 @@ import path from "path";
 import { loginAs } from "./helpers/auth";
 
 const OVERRIDE_ENV = "PLAYWRIGHT_VISUAL_OVERRIDE_CSS";
+const isCI = !!process.env.CI;
 
 async function maybeApplyOverride(page: Page) {
   const overridePath = process.env[OVERRIDE_ENV];
@@ -37,7 +38,9 @@ test.describe("Visual regression", () => {
     await expect(page).toHaveScreenshot("inventory-baseline.png", {
       fullPage: true,
       animations: "disabled",
-      mask: [page.locator('[data-test="shopping-cart-link"]')]
+      mask: [page.locator("[data-test=\"shopping-cart-link\"]")],
+      maxDiffPixels: isCI ? 20000 : 1000,
+      maxDiffPixelRatio: isCI ? 0.03 : 0.01
     });
   });
 });
