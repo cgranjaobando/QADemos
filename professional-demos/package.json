@@ -1,0 +1,34 @@
+{
+  "name": "professional-demos",
+  "version": "0.1.0",
+  "description": "QA, CRO, search evaluation, and delivery playbook demos.",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "ci:headless": "playwright test --config=playwright.config.ts",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:a11y": "playwright test demos/qa/swaglabs-playwright/tests/a11y.spec.ts",
+    "a11y": "npm run test:a11y",
+    "test:visual": "playwright test demos/qa/swaglabs-playwright/tests/visual.spec.ts",
+    "visual": "npm run test:visual",
+    "test:visual:update": "playwright test demos/qa/swaglabs-playwright/tests/visual.spec.ts --update-snapshots",
+    "visual:update": "npm run test:visual:update",
+    "visual:demo": "pwsh -NoLogo -NoProfile -File scripts/visual-demo.ps1",
+    "api:start": "pwsh -NoLogo -NoProfile -File scripts/run-api.ps1",
+    "api:smoke": "pwsh -NoLogo -NoProfile -File scripts/run-api-smoke.ps1",
+    "playwright:install": "playwright install",
+    "lint": "echo \"TODO: add linting\""
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

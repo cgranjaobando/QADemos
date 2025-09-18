@@ -1,0 +1,66 @@
+.hero--variant {
+  background: linear-gradient(135deg, #edf2fb 0%, #ffffff 35%, #fef6e4 100%);
+}
+
+.hero__accent {
+  color: #003049;
+  background: linear-gradient(120deg, rgba(0, 48, 73, 0.12), rgba(214, 40, 40, 0.12));
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.hero__capture {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 48, 73, 0.12);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hero__label {
+  font-weight: 600;
+  color: #003049;
+}
+
+.hero__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero__form input[type='email'] {
+  flex: 1 1 220px;
+  min-width: 220px;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 48, 73, 0.25);
+  font-size: 1rem;
+}
+
+.hero__proof--stats {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.hero__proof--stats dt {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d62828;
+}
+
+.hero__proof--stats dd {
+  margin: 0;
+  color: #3a405a;
+}
+
+.hero__promo--variant img {
+  box-shadow: 0 15px 35px rgba(0, 48, 73, 0.22);
+}
+
+.hero__legal {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #536070;
+}

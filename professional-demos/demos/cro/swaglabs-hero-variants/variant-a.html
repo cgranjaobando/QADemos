@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swag Labs • Variant A Hero</title>
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/variant-a.css" />
+  </head>
+  <body>
+    <header class="hero hero--variant" data-experiment="swag-hero" data-variant="variant-a">
+      <div class="hero__badge" role="status">New: Smart restock alerts</div>
+      <h1 class="hero__headline">
+        Never miss the drop. <span class="hero__accent">Reserve hot swag first.</span>
+      </h1>
+      <p class="hero__subhead">
+        Variant A introduces early access reservations and bundles recommended by
+        Sauce AI for a projected +6.5% uplift in completed checkout.
+      </p>
+      <form class="hero__capture" data-qa="reservation-form">
+        <label class="hero__label" for="email">Claim your reservation invite</label>
+        <div class="hero__form">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@saucefan.dev"
+            autocomplete="email"
+            required
+          />
+          <button class="btn btn--primary" type="submit" data-qa="cta-join-waitlist">
+            Join waitlist
+          </button>
+        </div>
+        <p class="hero__legal">No spam. We remind you 15 minutes before each drop.</p>
+      </form>
+      <dl class="hero__proof hero__proof--stats">
+        <div>
+          <dt>+18%</dt>
+          <dd>Add-to-cart rate (beta testers)</dd>
+        </div>
+        <div>
+          <dt>92%</dt>
+          <dd>Reservation-to-checkout completion</dd>
+        </div>
+        <div>
+          <dt>24h</dt>
+          <dd>Average restock notification lead time</dd>
+        </div>
+      </dl>
+      <figure class="hero__promo hero__promo--variant" aria-labelledby="promo-caption">
+        <img src="https://dummyimage.com/560x320/003049/ffffff&text=Reservation+Queue" alt="Reservation queue for upcoming swag" />
+        <figcaption id="promo-caption">Variant A features timed reservations with queue transparency.</figcaption>
+      </figure>
+    </header>
+  </body>
+</html>

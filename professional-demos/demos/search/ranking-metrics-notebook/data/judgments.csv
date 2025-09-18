@@ -1,0 +1,13 @@
+query_id,query,doc_id,grade
+Q1,"sauce labs backpack","DOC1",3
+Q1,"sauce labs backpack","DOC2",2
+Q1,"sauce labs backpack","DOC3",1
+Q1,"sauce labs backpack","DOC4",0
+Q2,"remove item","DOC5",3
+Q2,"remove item","DOC6",2
+Q2,"remove item","DOC7",1
+Q2,"remove item","DOC8",0
+Q3,"checkout tax","DOC9",3
+Q3,"checkout tax","DOC10",2
+Q3,"checkout tax","DOC11",1
+Q3,"checkout tax","DOC12",0

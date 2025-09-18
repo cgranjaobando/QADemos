@@ -1,0 +1,5 @@
+workstream,deliverable,responsible,accountable,consulted,informed
+QA automation,Playwright E2E slice,QA Lead,Product Manager,Engineering Lead;Design Lead,Support;Analytics
+CRO experiment,Hero variant launch,CRO Specialist,Growth Manager,Design Lead;Analytics Lead,Support;Legal
+Search evaluation,NDCG regression notebook,Search Analyst,Head of Product,Data Engineering;ML Ops,QA;Support
+Delivery,Weekly steering updates,Project Manager,Executive Sponsor,Product Manager;Engineering Lead,All teams

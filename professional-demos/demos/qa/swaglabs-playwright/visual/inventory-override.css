@@ -1,0 +1,11 @@
+/* Intentional visual override to demonstrate screenshot diffs.
+   Run `npm run visual:demo` to apply this CSS and trigger a diff. */
+.inventory_item:first-child .inventory_item_name {
+    color: #d62828 !important;
+}
+
+.inventory_item:first-child .inventory_item_price {
+    background: #ffe066 !important;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}

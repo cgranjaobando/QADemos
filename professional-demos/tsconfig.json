@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node", "@playwright/test"],
+    "lib": ["ESNext", "DOM"],
+    "outDir": "dist"
+  },
+  "include": [
+    "playwright.config.ts",
+    "demos/qa/swaglabs-playwright/**/*.ts"
+  ]
+}

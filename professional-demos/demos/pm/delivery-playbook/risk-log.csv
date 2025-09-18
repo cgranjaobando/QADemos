@@ -1,0 +1,5 @@
+id,category,description,impact,likelihood,owner,mitigation,status
+R1,Automation,"Swag Labs DOM changes break selectors",High,Medium,QA Lead,"Add data-test selectors, monitor nightly smoke",Tracking
+R2,Experiment,"Waitlist email hits spam filters",Medium,Low,CRO Specialist,"Authenticate domain, seed inbox QA",Open
+R3,Search,"Judgment set becomes stale",Medium,Medium,Search Analyst,"Schedule quarterly review, add regression alerts",Open
+R4,Delivery,"Competing initiatives steal resources",High,Medium,Project Manager,"Escalate in steering, secure executive sponsor",Mitigating
