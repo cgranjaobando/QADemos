@@ -7,7 +7,7 @@ Portfolio repository for QA automation, CRO experimentation, search analytics, a
 
 ## Concept
 
-- **Multi-track coverage:** Each demo highlights a discipline—automation, CRO, search evaluation, or project delivery—with shared conventions and helper tooling.
+- **Multi-track coverage:** Each demo highlights a discipline--automation, CRO, search evaluation, or project delivery--with shared conventions and helper tooling.
 - **Scalable structure:** New sites slot into `demos/<track>/<site-id>/`, reusing shared scripts, docs templates, and CI jobs.
 - **Reproducible artifacts:** Playwright reports, axe findings, visual baselines, k6 smoke outputs, and metric summaries are stored under versioned folders for traceability.
 
@@ -15,7 +15,7 @@ Portfolio repository for QA automation, CRO experimentation, search analytics, a
 
 | Track | Path | Highlights |
 |-------|------|------------|
-| QA Automation | `demos/qa/swaglabs-playwright/` | Playwright tests for login → checkout, axe scans, visual baselines, synthetic checkout API + k6 smoke |
+| QA Automation | `demos/qa/swaglabs-playwright/` | Playwright tests for login -> checkout, axe scans, visual baselines, synthetic checkout API + k6 smoke |
 | CRO Experimentation | `demos/cro/swaglabs-hero-variants/` | Control vs Variant HTML, hypothesis & MDE plan |
 | Search Evaluation | `demos/search/ranking-metrics-notebook/` | Synthetic judgments, NDCG/MAP CLI + notebook |
 | Delivery Playbook | `demos/pm/delivery-playbook/` | RACI matrix, risk log, cadence blueprint |
@@ -25,7 +25,7 @@ Portfolio repository for QA automation, CRO experimentation, search analytics, a
 1. Create a folder under the relevant track (e.g., `demos/qa/newsite-playwright/`).
 2. Follow the existing Swag Labs scaffolding (helpers, tests, data, README) to ensure commands and reports mirror current patterns.
 3. Update MkDocs navigation (`docs/*.md`) and add track-specific instructions or links to new artifacts.
-4. Extend CI or scripts only as needed—most workflows detect new content automatically as long as file paths follow the established naming.
+4. Extend CI or scripts only as needed--most workflows detect new content automatically as long as file paths follow the established naming.
 
 ## Quickstart (Windows PowerShell)
 
@@ -70,7 +70,7 @@ python demos/search/ranking-metrics-notebook/calc_metrics.py --output demos/sear
 
 ## Docs & CI
 
-- MkDocs Material site: `docs/` → `mkdocs serve`
+- MkDocs Material site: `docs/` -> `mkdocs serve`
 - GitHub Actions workflows: `.github/workflows/ci.yml`, `.github/workflows/pages.yml`
 - Static site published via GitHub Pages (Actions deploy job).
 
@@ -81,5 +81,9 @@ python demos/search/ranking-metrics-notebook/calc_metrics.py --output demos/sear
 - Capture new artifacts under the relevant `test-results/` or `outputs/` directories.
 - Never commit secrets; only synthetic or public data is allowed.
 
-The repo stays ready for additional demos—copy the Swag Labs patterns, adjust data to the new site, and you’ll have end-to-end coverage, reports, and documentation with minimal extra wiring.
+The repo stays ready for additional demos--copy the Swag Labs patterns, adjust data to the new site, and you’ll have end-to-end coverage, reports, and documentation with minimal extra wiring.
+
+
+
+
 
