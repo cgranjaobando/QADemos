@@ -33,6 +33,9 @@ The API returns health, inventory, and checkout totals so the `k6` smoke can ver
 
 ## Artifacts
 
+- [Scenario Matrix](qa-scenarios.md)
+
+
 - Playwright HTML report: `playwright-report/index.html`
 - Accessibility JSON reports: `test-results/a11y/*.json`
 - Visual baselines: `demos/qa/swaglabs-playwright/tests/visual.spec.ts-snapshots/`
